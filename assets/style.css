@@ -87,17 +87,41 @@
     -webkit-filter: grayscale(1) blur(2px);
     border-radius: 20px;
 }
-
+/*ESERCIZIO 9*/
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+
+/*ESERCIZIO 10*/
+
 .ex-10-icon {
     font-size: 60px;
+    animation: spin 1s linear infinite;
+
 }
-.ex-11-icon {
+
+@keyframes spin {
+    from{ transform: rotate(0deg)}
+    to { transform: rotate(360deg);}
+}
+
+/*ESERCIZIO 11*/
+.ex-11-icon{
     font-size: 60px;
+    
 }
+
+@keyframes reversespin{
+    0%{transform:rotate(0deg)}
+    75%{transform: rotate(280deg);}
+}
+
+.ex-11-icon:hover{
+    animation: reversespin 1s linear infinite;
+}
+
+/*ESERCIZIO 12*/
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -111,6 +135,23 @@
     text-align: center;
     text-decoration: none;
 }
+
+.ex-12-top-white:active{
+    animation: button 3s infinite linear;
+}
+
+/*ESERCIZIO 13*/
+
+.ex-13-bottom-white{
+    animation: rotate 5s  infinite;
+}
+
+@keyframes rotate{
+    from{transform:translateX(0%) translateY(0%)}
+    to{transform: translateX(100%) translateY(100%);}
+}
+
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
